@@ -34,7 +34,7 @@ public class Cheque {
     @NotEmpty
     private String referenceCheque;
 
-    private double montntCheque;
+    private double montantCheque;
 
     private boolean estEncaisse;
 

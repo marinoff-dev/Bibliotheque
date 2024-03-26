@@ -5,7 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import bj.wf.training.biblio.model.Cheque;
 
+import java.util.Optional;
+
 @Repository
 public interface ChequeRepository extends JpaRepository<Cheque, Long> {
-
+    Optional<Cheque> findByReferenceCheque(String reference);
 }
